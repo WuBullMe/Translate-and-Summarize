@@ -10,3 +10,4 @@ datasets==2.15.0
 rouge_score==0.1.2
 accelerate==0.24.1
 pyTelegramBotAPI==4.14.0
+newspaper3k==0.2.8
