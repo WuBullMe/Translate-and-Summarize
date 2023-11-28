@@ -2,10 +2,8 @@
 
 # About the Project: Get any news and summarize it in English and translate it in Russian.
 
-We are using HuggingFace Transformers to summarize and translate the text.
-
 # How to use
-## Note: For now to give the news please copy and paste the news in main.py file mannualy, later we will provide better interface.
+## Note: You can use by your own device (follow the instruction posted below), or use our [Telegram Bot](https://t.me/TranslateAndSummarizeBot) 
 
 1. Clone this repository
 ```bash
@@ -17,9 +15,9 @@ We are using HuggingFace Transformers to summarize and translate the text.
 ```bash
     pip install -r requirements.txt
 ```
-3. Copy and Paste interested news and run the program like:
+3. Run the following command
 ```bash
-    python main.py
+    python predict.py --text "Your text"
 ```
 
 # For any question or suggestions please create an issue we will look at it.
