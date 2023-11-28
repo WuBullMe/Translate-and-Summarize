@@ -3,7 +3,6 @@ import telebot
 from newspaper import Article
 import nltk
 from nltk import sent_tokenize
-from nltk import word_tokenize
 nltk.download('punkt', quiet=True)
 
 from summarize.predict import summarize
@@ -37,7 +36,6 @@ def get_text(message):
     global handle_text
     
     text = message.text
-    print("text:", text)
     if not handle_text:
         text = get_text_from_url(text)
     
@@ -102,7 +100,6 @@ def split_large_text(text):
     
     paragraphs = [' '.join(p[1]) for p in paragraphs]
     
-    print(paragraphs)
     return paragraphs
 
 
